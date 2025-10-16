@@ -1,0 +1,49 @@
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>Arrays</title>
+    </head>
+    <body>
+        <h2>Push & Pop</h2>
+          <p id="org"></p>
+          <p id="add"></p>
+          <p id="remove"></p>
+          <h2>Shift & Unshift</h2>
+          <p id = "orgarray"></p>
+          <p id="add1"></p>
+          <p id="remove1"></p>
+
+           <div id ="list"></div>
+    <script>
+        const country = ["India","USA","UK","Japan","China","Australia","South Africa"];
+         document.getElementById("org").innerHTML = country .join( " - ");
+
+        // Pop() method 
+           country.pop();
+           document.getElementById("remove").innerHTML = "After Pop : " + country;
+       
+        // Push() method
+           country.push("Pakistan");
+           document.getElementById("add").innerHTML = "After Push : " + country;
+       
+           const laptop = ["Lenova" , "HP" , "Dell" , "Acer"];
+            document.getElementById("orgarray").innerHTML = laptop.join(" ; ");
+         // unshift() method
+            laptop.unshift("Microsoft");
+            document.getElementById("add1").innerHTML = "After unshift : " + laptop;
+
+        // Shift() method
+           laptop.shift();
+           document.getElementById("remove1").innerHTML = "After Shift : " + laptop;
+    </script>
+
+    <script>
+        
+         let electronics = ["Tv", "Fridge" , "Washing Mechine" , "Fan", "AC" , "Speaker"];
+          let i ;
+          for(i = 0; i < electronics.length ; i++){
+            document.getElementById("list").innerHTML = electronics.join(" - ");
+          }
+    </script>
+    </body>
+</html>
